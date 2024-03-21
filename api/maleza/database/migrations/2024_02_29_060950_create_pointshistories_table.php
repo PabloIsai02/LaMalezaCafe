@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('pointshistory', function (Blueprint $table) {
+        Schema::create('pointshistories', function (Blueprint $table) {
             $table->id();
             $table->integer('customer_id');
             $table->integer('order_id');
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pointshistory');
+        Schema::dropIfExists('pointshistories');
     }
 };
